@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CakeBaker {
 
+
     private final Frosting frosting;
     private final Syrup syrup;
 
