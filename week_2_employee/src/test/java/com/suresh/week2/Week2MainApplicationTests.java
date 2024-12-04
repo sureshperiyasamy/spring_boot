@@ -1,10 +1,10 @@
-package com.suresh.week1Intro;
+package com.suresh.week2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IntroductionToSpringBootApplicationTests {
+class Week2MainApplicationTests {
 
 	@Test
 	void contextLoads() {
