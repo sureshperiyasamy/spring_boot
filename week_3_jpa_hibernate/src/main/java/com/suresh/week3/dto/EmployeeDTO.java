@@ -1,5 +1,6 @@
 package com.suresh.week3.dto;
 
+import com.suresh.week3.entities.DepartmentEntity;
 import com.suresh.week3.validations.EmployeeRoleValidation;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
@@ -19,23 +20,6 @@ import java.time.LocalDate;
 public class EmployeeDTO {
 
     private Long id;
-    @NotNull(message = "Name must not be null")
     private String name;
-
-    @Min(value = 18,message = "Minimum Age should be 18")
-    @Max(value = 30,message = "Maximum Age should be 30")
-    private Integer age;
-
-    @Email(message = "Enter valid email address")
-    private String email;
-
-
-    @NotNull(message = "Role must not be null")
-    @EmployeeRoleValidation
-    private String role;
-
-
-    private LocalDate doj;
-    private Boolean active;
-
+    DepartmentEntity workerDepartment;
 }
